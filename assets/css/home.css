@@ -23,12 +23,12 @@ html, body {
     height: 100%;
     margin: 0;
     background-color: var(--mainGray);
-    overflow-x: hidden; /* horizontal scrollbar
+    overflow-x: hidden;
 }
 
 body {
     /* Padding to prevent content from being hidden behind the fixed navbar */
-    padding-top: 100px;
+    padding-top: 6%;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
