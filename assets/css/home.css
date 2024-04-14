@@ -23,7 +23,7 @@ html, body {
     height: 100%;
     margin: 0;
     background-color: var(--mainGray);
-    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-x: hidden; /* horizontal scrollbar
 }
 
 body {
@@ -126,7 +126,7 @@ main {
 
 .sidebar li {
     margin-bottom: 20px;
-    font-size: 0.9rem; /* Adjust font size for sidebar items */
+    font-size: 0.9rem;
 }
 
 .sidebar img {
@@ -153,7 +153,7 @@ footer {
     padding-top: 20px;
     height: 10%;
     width: 100%;
-    font-size: 0.8rem; /* Adjust font size for footer text */
+    font-size: 0.8rem;
 }
 
 /* Responsive Adjustments */
@@ -168,46 +168,46 @@ footer {
     }
 
     .main-youtube {
-        max-width: 100%; /* Adjust as needed */
+        max-width: 100%;
     }
 
     h1, h2 {
-        font-size: 1.5rem; /* Adjust font size for headings on smaller screens */
+        font-size: 1.5rem;
     }
 
     .navbar-custom .navbar-nav .nav-link {
-        font-size: 0.8rem; /* Adjust font size for navbar links on smaller screens */
+        font-size: 0.8rem;
     }
 
     .sidebar li {
-        font-size: 0.8rem; /* Adjust font size for sidebar items on smaller screens */
+        font-size: 0.8rem;
     }
 
     footer {
-        font-size: 0.7rem; /* Adjust font size for footer text on smaller screens */
+        font-size: 0.7rem;
     }
 
     .navbar-custom {
-        padding: 0.5rem 1rem; /* Reduces padding on smaller screens */
+        padding: 0.5rem 1rem;
     }
 
     body {
-        padding-top: 70px; /* Adjusts body top padding to align with the navbar's reduced height */
+        padding-top: 70px;
     }
 }
 
 @media (max-width: 768px) {
     .card-title, .card-text {
-        font-size: 0.9rem;  /* Smaller font sizes for card text to avoid overflow */
+        font-size: 0.9rem;
     }
 
     .sidebar li {
-        font-size: 0.8rem;  /* Adjust sidebar list item font size */
+        font-size: 0.8rem;
     }
 }
 
 @media (max-width: 576px) {
     h1, h2, .card-title, .card-text {
-        font-size: 0.8rem;  /* Further reduce font size for very small devices */
+        font-size: 0.8rem; 
     }
 }

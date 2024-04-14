@@ -1,4 +1,4 @@
-/* Reset and General Styling */
+/* General Styling */
 .about-us-main {
     display: block;  /* Overrides flex from the inherited home.css */
     padding: 20px;
@@ -40,12 +40,12 @@
 .card-title {
     color: var(--mainColor);
     font-weight: bold;
-    font-size: 1.5rem; /* Slightly larger titles in the card */
+    font-size: 1.5rem;
 }
 
 .card-text {
     color: var(--secondaryColor);
-    font-size: 1rem; /* Standard text size */
+    font-size: 1rem;
 }
 
 .card-map {
@@ -64,7 +64,7 @@
     border-radius: 10px;
     max-width: 100%;
     height: auto;
-    border-radius: 5px; /* Optional styling for rounded corners */
+    border-radius: 5px
 }
 
 .volunteer-heading {
@@ -72,63 +72,63 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    font-size: 2.5rem; /* Large size for desktop */
+    font-size: 2.5rem;
     color: var(--secondaryColor);
 }
 
 .volunteer-text, .volunteer-link {
-    font-size: 1.25rem; /* Standard text size for links and volunteer descriptions */
+    font-size: 1.25rem;
 }
 
 /* Adjustments for tablets and small desktops */
 @media (max-width: 992px) {
     .about-us img {
-        max-width: 50%; /* Provides more space for images at intermediate sizes */
+        max-width: 50%; 
     }
 
     .card-title, .volunteer-heading {
-        font-size: 1.75rem; /* Adjusted for readability at intermediate sizes */
+        font-size: 1.75rem;
     }
 
     .card-text, .volunteer-text, .volunteer-link {
-        font-size: 1.1rem; /* Slightly larger text for intermediate screens */
+        font-size: 1.1rem;
     }
 
     .card, .card-body {
-        padding: 10px; /* Reduces padding to prevent layout squeeze */
+        padding: 10px;
     }
 }
 
-/* Additional refinement for medium devices */
+/* Refinement for medium devices */
 @media (max-width: 800px) {
     .about-us img {
-        max-width: 80%; /* Increases image size slightly for medium devices */
+        max-width: 80%;
     }
 
     .card {
-        margin-bottom: 15px; /* Adjusts spacing between cards */
+        margin-bottom: 15px;
     }
 
     .card-title {
-        font-size: 1.5rem; /* Further adjust for medium devices */
+        font-size: 1.5rem;
     }
 
     .card-text {
-        font-size: 1rem; /* Adjust text size for better fit */
+        font-size: 1rem;
     }
 }
 
-/* Adjustments for mobile phones */
+/* Adjustments for phones */
 @media (max-width: 576px) {
     .about-us img {
-        max-width: 100%; /* Full width images on small devices */
+        max-width: 100%;
     }
 
     .card-title, .volunteer-heading {
-        font-size: 1.5rem; /* Adjust font size for small screens */
+        font-size: 1.5rem;
     }
 
     .card-text, .volunteer-text, .volunteer-link {
-        font-size: 0.9rem; /* Smaller text for small screens */
+        font-size: 0.9rem;
     }
 }
