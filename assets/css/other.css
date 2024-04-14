@@ -1,0 +1,134 @@
+/* Reset and General Styling */
+.about-us-main {
+    display: block;  /* Overrides flex from the inherited home.css */
+    padding: 20px;
+    margin: 0;
+}
+
+/* Improved Section Styling */
+.about-us-main .container-fluid {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--mainGray);
+}
+
+/* Row styling within about-us-main */
+.about-us-main .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.about-us img {
+    border-radius: 10px;
+    max-width: 30%;
+    height: auto;
+}
+
+/* Styling for cards in the Locations section */
+.card {
+    border-radius: 10px;
+    background-color: var(--textWhite);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    color: var(--mainColor);
+    font-weight: bold;
+    font-size: 1.5rem; /* Slightly larger titles in the card */
+}
+
+.card-text {
+    color: var(--secondaryColor);
+    font-size: 1rem; /* Standard text size */
+}
+
+.card-map {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px rgb(211, 211, 211);
+}
+
+/* Styling for the volunteering sections */
+.volunteer-link {
+    color: var(--secondaryColor);
+    text-decoration: underline;
+}
+
+.volunteer-image {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Optional styling for rounded corners */
+}
+
+.volunteer-heading {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 2.5rem; /* Large size for desktop */
+    color: var(--secondaryColor);
+}
+
+.volunteer-text, .volunteer-link {
+    font-size: 1.25rem; /* Standard text size for links and volunteer descriptions */
+}
+
+/* Adjustments for tablets and small desktops */
+@media (max-width: 992px) {
+    .about-us img {
+        max-width: 50%; /* Provides more space for images at intermediate sizes */
+    }
+
+    .card-title, .volunteer-heading {
+        font-size: 1.75rem; /* Adjusted for readability at intermediate sizes */
+    }
+
+    .card-text, .volunteer-text, .volunteer-link {
+        font-size: 1.1rem; /* Slightly larger text for intermediate screens */
+    }
+
+    .card, .card-body {
+        padding: 10px; /* Reduces padding to prevent layout squeeze */
+    }
+}
+
+/* Additional refinement for medium devices */
+@media (max-width: 800px) {
+    .about-us img {
+        max-width: 80%; /* Increases image size slightly for medium devices */
+    }
+
+    .card {
+        margin-bottom: 15px; /* Adjusts spacing between cards */
+    }
+
+    .card-title {
+        font-size: 1.5rem; /* Further adjust for medium devices */
+    }
+
+    .card-text {
+        font-size: 1rem; /* Adjust text size for better fit */
+    }
+}
+
+/* Adjustments for mobile phones */
+@media (max-width: 576px) {
+    .about-us img {
+        max-width: 100%; /* Full width images on small devices */
+    }
+
+    .card-title, .volunteer-heading {
+        font-size: 1.5rem; /* Adjust font size for small screens */
+    }
+
+    .card-text, .volunteer-text, .volunteer-link {
+        font-size: 0.9rem; /* Smaller text for small screens */
+    }
+}
