@@ -1,3 +1,47 @@
+/* Ensures the content in main is centered */
+.main-distribution {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Example of making rows in main take equal space if needed */
+.main-distribution .row {
+    flex: 1; /* Each row will take equal height */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+}
+.distribution {
+    padding: 15px;
+    text-align: center;
+}
+
+.distribution h2 {
+    font-size: 3rem;
+}
+
+.distribution p {
+    font-size: 1.5rem;
+}
+
+.distribution-row article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.distribution-row img {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
 /* General Styling */
 .about-us-main {
     display: block;  /* Overrides flex from the inherited home.css */

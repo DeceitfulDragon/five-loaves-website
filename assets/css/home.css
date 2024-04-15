@@ -22,17 +22,24 @@
 html, body {
     height: 100%;
     margin: 0;
+    padding: 0;
     background-color: var(--mainGray);
-    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
     /* Padding to prevent content from being hidden behind the fixed navbar */
     padding-top: 6%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     font-family: "Roboto", sans-serif;
+}
+
+header, footer {
+    flex-shrink: 0; /* Prevents header and footer from shrinking */
 }
 
 h1, h2 {
@@ -98,18 +105,20 @@ h1, h2 {
 
 /* Main Content */
 main {  
-    padding-top: 20px;
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
 }
 
 .main-page {
     justify-content: center;    
+    background-color: #e3e3e3;
 }
 
 .video {
+    display: flex;
     justify-content: center;
-    display: block;
-    border-style: double;
-    border-color: var(--secondaryColor);
+    align-items: center;
 }
 
 /* Sidebar */
@@ -150,7 +159,7 @@ footer {
     background-color: var(--mainColor);
     color: var(--textWhite);
     text-align: center;
-    padding-top: 20px;
+    padding: 10px 0;
     height: 10%;
     width: 100%;
     font-size: 0.8rem;
