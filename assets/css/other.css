@@ -1,46 +1,73 @@
 /* ============ PAGE 1 | DISTRIBUTION ============================================== */
-
-/* Ensures the content in main is centered */
-.main-distribution {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.main-distribution .row {
-    flex: 1;
-    display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-}
 .distribution {
-    padding: 15px;
     text-align: center;
 }
 
-.distribution h2 {
-    font-size: 3rem;
+.distribution-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 -15px;
 }
 
-.distribution p {
+/* Cards */
+.distribution-box {
+    border: 1px solid var(--secondaryColor);
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    padding: 15px;
+    background-color: #fff;
+    margin: 10px;
+    flex-basis: calc(33.333% - 20px); /* Adjustment for spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%; /* Ensures cards do not overflow the viewport */
+}
+
+.distribution-box:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+}
+
+.distribution-box figure, .distribution-box img {
+    width: 100%;
+    height: auto;
+}
+
+.distribution-box h3 {
+    margin-top: 10px;
     font-size: 1.5rem;
 }
 
-.distribution-row article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 20px;
+.distribution-box p, .distribution-box a {
+    font-size: 1rem;
 }
 
-.distribution-row img {
-    max-width: 40%;
-    height: auto;
-    margin-bottom: 15px;
+.distribution-box ul {
+    text-align: left; /* Left-aligns list content */
+    padding: 0 10px;
+}
+
+.distribution-box img {
+    border-radius: 15px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .distribution-row {
+        flex-direction: row;
+    }
+
+    .distribution-box {
+        flex-basis: 100%; /* Ensures boxes take full width on smaller devices */
+    }
+
+    .distribution-box img {
+        max-width: 100%; /* Ensures images scale properly on smaller screens */
+    }
 }
 
 /* ============ PAGE 6 | ABOUT US ============================================== */
