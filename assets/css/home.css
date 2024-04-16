@@ -2,18 +2,16 @@
 * {
     box-sizing: border-box;
     /* Uncomment to see the outline of each box */
-    /* border: 1px solid red; */
+    /* border: 1px solid red;*/
 }
 
 /* Custom Colors */
 :root {
     --mainColor: #004d2c;
     --secondaryColor: #795548;
-    --mainGray: #e6e6e6;
+    --tertiaryColor: #e6e6e6;
     --textWhite: #ffffff;
-    --navbar-background-color: #004d2c;
-    --navbar-text-color: #ffffff;
-    --navbar-hover-background-color: #b6d2d0;
+
     --navbar-hover-text-color: #00b840;
     --navbar-active-color: #006938;
     --navbar-border-color: #ffffff;
@@ -23,7 +21,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: var(--mainGray);
+    background-color: var(--tertiaryColor);
     display: flex;
     flex-direction: column;
 }
@@ -68,7 +66,7 @@ h1, h2 {
 
 /* Navbar */
 .navbar-custom {
-    background-color: var(--navbar-background-color);
+    background-color: var(--mainColor);
     padding: 1rem 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -86,7 +84,7 @@ h1, h2 {
 }
 
 .navbar-custom .navbar-nav .nav-link {
-    color: var(--navbar-text-color);
+    color: var(--textWhite);
     padding: 0.75rem 1rem;
     border-right: 2px solid var(--navbar-border-color);
     transition: color 0.3s ease, background-color 0.3s ease;

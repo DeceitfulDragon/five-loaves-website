@@ -1,3 +1,5 @@
+/* ============ PAGE 1 | DISTRIBUTION ============================================== */
+
 /* Ensures the content in main is centered */
 .main-distribution {
     display: flex;
@@ -7,9 +9,8 @@
     height: 100%;
 }
 
-/* Example of making rows in main take equal space if needed */
 .main-distribution .row {
-    flex: 1; /* Each row will take equal height */
+    flex: 1;
     display: flex;
     justify-content: center; /* Centers content horizontally */
     align-items: center; /* Centers content vertically */
@@ -42,21 +43,20 @@
     margin-bottom: 15px;
 }
 
-/* General Styling */
+/* ============ PAGE 6 | ABOUT US ============================================== */
+
 .about-us-main {
-    display: block;  /* Overrides flex from the inherited home.css */
+    display: block;
     padding: 20px;
     margin: 0;
 }
 
-/* Improved Section Styling */
 .about-us-main .container-fluid {
     padding: 20px;
     margin-top: 20px;
     background-color: var(--mainGray);
 }
 
-/* Row styling within about-us-main */
 .about-us-main .row {
     display: flex;
     flex-wrap: wrap;
@@ -69,7 +69,7 @@
     height: auto;
 }
 
-/* Styling for cards in the Locations section */
+/* for cards in Locations */
 .card {
     border-radius: 10px;
     background-color: var(--textWhite);
