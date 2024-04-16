@@ -70,6 +70,35 @@
     }
 }
 
+/* ============ PAGE 5 | DONATIONS ============================================= */
+
+.po-box {
+    padding: 10px;
+    border-style: dashed;
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 10px;
+    }
+    .distribution-box {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
 /* ============ PAGE 6 | ABOUT US ============================================== */
 
 .about-us-main {
