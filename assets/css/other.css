@@ -57,6 +57,11 @@
     max-width: 60%;
 }
 
+.po-box {
+    border-style: dashed;
+    padding: 1.5%;
+}
+
 /* Cards, Volunteering, and About Us Sections */
 .card, .volunteer-image {
     border-radius: 15px;
