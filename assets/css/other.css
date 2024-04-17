@@ -1,4 +1,3 @@
-/* General Page Layouts and Elements */
 .distribution, .po-box, .volunteer-link {
     text-align: center;
 }
@@ -19,12 +18,12 @@
     padding: 15px;
     background-color: #fff;
     margin: 10px;
-    flex-basis: calc(33.333% - 20px); /* Adjustment for spacing */
+    flex-basis: calc(33.333% - 20px);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 100%; /* Ensures cards do not overflow the viewport */
+    max-width: 100%;
 }
 
 .distribution-box li {
@@ -52,17 +51,18 @@
     padding: 0 10px;
 }
 
-.about-image {
-    border-radius: 15px;
-    max-width: 60%;
-}
-
 .po-box {
     border-style: dashed;
     padding: 1.5%;
 }
 
 /* Cards, Volunteering, and About Us Sections */
+
+.about-image {
+    border-radius: 15px;
+    max-width: 60%;
+}
+
 .card, .volunteer-image {
     border-radius: 15px;
     margin-bottom: 20px;
