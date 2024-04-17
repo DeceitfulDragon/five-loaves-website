@@ -1,17 +1,13 @@
-/* Reset and General Styling */
+/* General Resets and Styling */
 * {
     box-sizing: border-box;
-    /* Uncomment to see the outline of each box */
-    /* border: 1px solid red;*/
 }
 
-/* Custom Colors */
 :root {
     --mainColor: #004d2c;
     --secondaryColor: #795548;
     --tertiaryColor: #e6e6e6;
     --textWhite: #ffffff;
-
     --navbar-hover-text-color: #00b840;
     --navbar-active-color: #006938;
     --navbar-border-color: #ffffff;
@@ -28,17 +24,13 @@ html, body {
 }
 
 body {
-    /* Padding to prevent content from being hidden behind the fixed navbar */
-    padding-top: 6%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    padding-top: 5%;
     min-height: 100vh;
     font-family: "Roboto", sans-serif;
 }
 
 header, footer {
-    flex-shrink: 0; /* Prevents header and footer from shrinking */
+    flex-shrink: 0;
 }
 
 h1, h2 {
@@ -46,36 +38,33 @@ h1, h2 {
     font-size: 2rem;
 }
 
-/* Container & Grid */
+/* Containers and Grids */
 .container, .container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    padding: 15px;
+    margin: auto;
     width: 100%;
 }
 
 .row {
-    margin-right: -15px;
-    margin-left: -15px;
+    margin: 0 -15px;
 }
 
 .row > * {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 15px;
 }
 
-/* Navbar */
+.secondaryColorText {
+    color: var(--secondaryColor);
+}
+
+/* Navbar Styles */
 .navbar-custom {
     background-color: var(--mainColor);
-    padding: 1rem 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    width: 100%;
-    /* Stuff for making the navbar fixed */
+    padding: 1rem;
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
     z-index: 1000;
 }
 
@@ -83,13 +72,15 @@ h1, h2 {
     height: 60px;
     vertical-align: middle;
 }
-
+    
 .navbar-custom .navbar-nav .nav-link {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
     color: var(--textWhite);
     padding: 0.75rem 1rem;
     border-right: 2px solid var(--navbar-border-color);
-    transition: color 0.3s ease, background-color 0.3s ease;
     font-size: 0.9rem;
+    transition: color 0.3s, background-color 0.3s;
 }
 
 .navbar-custom .navbar-nav .nav-link:hover, .navbar-custom .navbar-nav .nav-link:focus {
@@ -102,10 +93,10 @@ h1, h2 {
     font-size: 30px;
 }
 
-/* Main Content */
-main {  
+/* Main Content Styles */
+main {
     flex-grow: 1;
-    padding: 20px;
+    padding-top: 20px;
     overflow-y: auto;
 }
 
@@ -120,7 +111,7 @@ main {
     align-items: center;
 }
 
-/* Sidebar */
+/* Sidebar Styles */
 .sidebar {
     border-left: 2px solid var(--navbar-border-color);
     padding: 20px;
@@ -141,30 +132,26 @@ main {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
-    justify-content: center;
     border-radius: 7px;
 }
 
-/* Buttons on the side */
+/* Button Styles */
 .sidebar-buttons, .sidebar-buttons:link, .sidebar-buttons:visited {
     border: 1px solid black;
     background-color: var(--secondaryColor);
     color: var(--textWhite);
     border-radius: 7px;
     text-decoration: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Hover state of the button */
 .sidebar-buttons:hover {
     color: var(--tertiaryColor);
-    text-decoration: none;
     transform: translateY(-5px);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-
-/* Footer */
+/* Footer Styles */
 footer {
     background-color: var(--mainColor);
     color: var(--textWhite);
@@ -181,8 +168,7 @@ footer {
         flex-direction: column;
     }
 
-    .wide-image,
-    .sidebar {
+    .wide-image, .sidebar {
         flex-basis: 100%;
     }
 
@@ -190,8 +176,8 @@ footer {
         max-width: 100%;
     }
 
-    h1, h2 {
-        font-size: 1.5rem;
+    h1, h2, h3, h4, h5 {
+        font-size: 2rem;
     }
 
     .navbar-custom .navbar-nav .nav-link {
@@ -226,7 +212,10 @@ footer {
 }
 
 @media (max-width: 576px) {
-    h1, h2, .card-title, .card-text {
+    .card-title, .card-text {
         font-size: 0.8rem; 
+    }
+    h1, h2, h3, h4, h5 {
+        font-size: 1.7rem;
     }
 }

@@ -1,8 +1,9 @@
-/* ============ PAGE 1 | DISTRIBUTION ============================================== */
-.distribution {
+/* General Page Layouts and Elements */
+.distribution, .po-box, .volunteer-link {
     text-align: center;
 }
 
+/* Distribution Cards */
 .distribution-row {
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +11,6 @@
     margin: 0 -15px;
 }
 
-/* Cards */
 .distribution-box {
     border: 1px solid var(--secondaryColor);
     border-radius: 15px;
@@ -27,6 +27,10 @@
     max-width: 100%; /* Ensures cards do not overflow the viewport */
 }
 
+.distribution-box li {
+    text-align: left;
+}
+
 .distribution-box:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     transform: translateY(-5px);
@@ -35,6 +39,7 @@
 .distribution-box figure, .distribution-box img {
     width: 100%;
     height: auto;
+    border-radius: 15px;
 }
 
 .distribution-box h3 {
@@ -42,152 +47,47 @@
     font-size: 1.5rem;
 }
 
-.distribution-box p, .distribution-box a {
+.distribution-box p, .distribution-box a, .distribution-box ul {
     font-size: 1rem;
-}
-
-.distribution-box ul {
-    text-align: left; /* Left-aligns list content */
     padding: 0 10px;
 }
 
-.distribution-box img {
+.about-image {
     border-radius: 15px;
-}
-
-/* Media Queries for responsiveness */
-@media (max-width: 768px) {
-    .distribution-row {
-        flex-direction: row;
-    }
-
-    .distribution-box {
-        flex-basis: 100%; /* Ensures boxes take full width on smaller devices */
-    }
-
-    .distribution-box img {
-        max-width: 100%; /* Ensures images scale properly on smaller screens */
-    }
-}
-
-/* ============ PAGE 5 | DONATIONS ============================================= */
-
-.po-box {
-    padding: 10px;
-    border-style: dashed;
-    text-align: center;
-}
-
-.card {
-    margin-bottom: 20px;
-    border-radius: 15px;
-}
-
-@media (max-width: 768px) {
-    .card {
-        margin-bottom: 10px;
-    }
-    .distribution-box {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 576px) {
-    .col-md-6 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
-
-/* ============ PAGE 6 | ABOUT US ============================================== */
-
-.about-us-main {
-    display: block;
-    padding: 20px;
-    margin: 0;
-}
-
-.about-us-main .container-fluid {
-    padding: 20px;
-    margin-top: 20px;
-    background-color: var(--mainGray);
-}
-
-.about-us-main .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
-}
-
-.about-us img {
-    border-radius: 10px;
     max-width: 60%;
-    height: auto;
 }
 
-/* for cards in Locations */
-.card {
-    border-radius: 10px;
-    background-color: var(--textWhite);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+/* Cards, Volunteering, and About Us Sections */
+.card, .volunteer-image {
+    border-radius: 15px;
     margin-bottom: 20px;
+    max-width: 100%;
 }
 
-.card-body {
+.card-body, .about-us-main .container-fluid {
     padding: 15px;
+    background-color: var(--textWhite);
+    border-radius: 15px;
 }
 
-.card-title {
+.card-title, .volunteer-heading {
     color: var(--mainColor);
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: left;
     font-size: 1.5rem;
 }
 
 .card-text {
     color: var(--secondaryColor);
-    font-size: 1rem;
 }
 
-.card-map {
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 1px 1px rgb(211, 211, 211);
-}
-
-/* Styling for the volunteering sections */
-.volunteer-link {
-    color: var(--secondaryColor);
-    text-decoration: underline;
-}
-
-.volunteer-image {
-    border-radius: 10px;
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px
-}
-
-.volunteer-heading {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    font-size: 2.5rem;
-    color: var(--secondaryColor);
-}
-
-.volunteer-text, .volunteer-link {
-    font-size: 1.25rem;
-}
-
-/* Adjustments for tablets and small desktops */
+/* Responsive Design Adjustments */
 @media (max-width: 992px) {
-    .about-us img {
-        max-width: 50%; 
-    }
-
-    .card-title, .volunteer-heading {
+    .about-us img, .card-title, .volunteer-heading {
         font-size: 1.75rem;
+        max-width: 50%; 
     }
 
     .card-text, .volunteer-text, .volunteer-link {
@@ -199,36 +99,30 @@
     }
 }
 
-/* Refinement for medium devices */
-@media (max-width: 800px) {
-    .about-us img {
-        max-width: 80%;
+@media (max-width: 768px) {
+    .distribution-row, .card {
+        flex-direction: column;
     }
 
-    .card {
-        margin-bottom: 15px;
+    .distribution-box {
+        flex-basis: 100%;
     }
 
-    .card-title {
-        font-size: 1.5rem;
+    .distribution-box img {
+        max-width: 100%;
     }
 
-    .card-text {
-        font-size: 1rem;
+    .card-title, .card-text {
+        font-size: 0.9rem;
     }
 }
 
-/* Adjustments for phones */
 @media (max-width: 576px) {
     .about-us img {
         max-width: 100%;
     }
 
-    .card-title, .volunteer-heading {
-        font-size: 1.5rem;
-    }
-
-    .card-text, .volunteer-text, .volunteer-link {
+    .card-title, .volunteer-heading, .card-text, .volunteer-text, .volunteer-link {
         font-size: 0.9rem;
     }
 }
