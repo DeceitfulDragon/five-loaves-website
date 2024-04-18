@@ -99,6 +99,55 @@ h1, h2 {
     font-size: 30px;
 }
 
+/* Carousel general styles */
+#fsCarousel {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* Image sizing within the carousel */
+#fsCarousel .carousel-inner .carousel-item img {
+    width: 100%; /* Ensure images take up the full width of their container */
+    height: 400px; /* Fixed height for images */
+    object-fit: cover; /* Cover ensures that aspect ratios are maintained without distortion */
+}
+
+/* Carousel indicators style */
+#fsCarousel .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; /* Makes indicators round */
+    background-color: #fff; /* White color indicator dots */
+    border: none;
+}
+
+#fsCarousel .carousel-indicators .active {
+    background-color: #333; /* Darker color for the active indicator */
+}
+
+/* Carousel controls styling */
+#fsCarousel .carousel-control-prev, 
+#fsCarousel .carousel-control-next {
+    width: 5%; /* Sufficient width for easier clicking */
+    color: #fff; /* Color of the arrows */
+}
+
+#fsCarousel .carousel-control-prev-icon,
+#fsCarousel .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border-radius: 50%; /* Round background */
+    padding: 10px; /* Padding around the arrow icon */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #fsCarousel .carousel-inner .carousel-item img {
+        height: 300px; /* Smaller height for smaller devices */
+    }
+}
+
 /* Main Content Styles */
 main {
     flex-grow: 1;
@@ -135,10 +184,8 @@ main {
 }
 
 .sidebar img {
-    width: 100%;
-    height: auto;
     margin-bottom: 20px;
-    border-radius: 7px;
+    border-radius: 15px;
 }
 
 /* Button Styles */

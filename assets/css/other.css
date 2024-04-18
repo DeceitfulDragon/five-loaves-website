@@ -56,6 +56,35 @@
     padding: 1.5%;
 }
 
+/* Banner Styling */
+.banner img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Set a maximum height for the banner */
+    object-fit: cover; /* Ensure the image covers the area properly */
+}
+
+
+.box-img {
+    width: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Maximum height for the box image */
+    object-fit: cover;
+}
+
+
+.signup-section p {
+    margin-bottom: 5px; /* Reduce space between paragraphs */
+}
+
+.signup-section figure {
+    margin-top: auto; /* Push image to the bottom */
+}
+
+.bottom-img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
 /* Cards, Volunteering, and About Us Sections */
 
 .about-image {
