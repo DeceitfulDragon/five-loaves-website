@@ -67,7 +67,7 @@
 
 .box-img {
     width: auto; /* Maintain aspect ratio */
-    max-height: 200px; /* Maximum height for the box image */
+    max-height: 200px; /* Maximum height for the box image */   
     object-fit: cover;
 }
 
@@ -110,7 +110,7 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .card-text {
@@ -133,7 +133,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .distribution-row, .card {
         flex-direction: column;
     }
@@ -146,7 +146,11 @@
         max-width: 100%;
     }
 
-    .card-title, .card-text {
+    .card-title, .volunteer-heading {
+        font-size: 1.5rem;
+    }    
+
+    .card-text, .volunteer-text, .volunteer-link {
         font-size: 0.9rem;
     }
 }
@@ -154,9 +158,5 @@
 @media (max-width: 576px) {
     .about-us img {
         max-width: 100%;
-    }
-
-    .card-title, .volunteer-heading, .card-text, .volunteer-text, .volunteer-link {
-        font-size: 0.9rem;
     }
 }
