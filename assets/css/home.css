@@ -26,7 +26,7 @@ html, body {
 }
 
 body {
-    padding-top: 5%;
+    padding-top: 6%;
     min-height: 100vh;
     font-family: "Roboto", sans-serif;
 }
@@ -107,45 +107,37 @@ h1, h2 {
     margin: auto;
 }
 
-/* Image sizing within the carousel */
 #fsCarousel .carousel-inner .carousel-item img {
-    width: 100%; /* Ensure images take up the full width of their container */
-    height: 400px; /* Fixed height for images */
-    object-fit: cover; /* Cover ensures that aspect ratios are maintained without distortion */
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
 /* Carousel indicators style */
 #fsCarousel .carousel-indicators li {
     width: 12px;
     height: 12px;
-    border-radius: 50%; /* Makes indicators round */
-    background-color: #fff; /* White color indicator dots */
+    border-radius: 15px;
+    background-color: #fff;
     border: none;
 }
 
 #fsCarousel .carousel-indicators .active {
-    background-color: #333; /* Darker color for the active indicator */
+    background-color: #333;
 }
 
 /* Carousel controls styling */
 #fsCarousel .carousel-control-prev, 
 #fsCarousel .carousel-control-next {
-    width: 5%; /* Sufficient width for easier clicking */
-    color: #fff; /* Color of the arrows */
+    width: 10%;
+    color: #fff;
 }
 
 #fsCarousel .carousel-control-prev-icon,
 #fsCarousel .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    border-radius: 50%; /* Round background */
-    padding: 10px; /* Padding around the arrow icon */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    #fsCarousel .carousel-inner .carousel-item img {
-        height: 300px; /* Smaller height for smaller devices */
-    }
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 10px;
 }
 
 /* Main Content Styles */
@@ -251,7 +243,7 @@ footer {
     }
 
     body {
-        padding-top: 70px;
+        padding-top: 100px;
     }
 }
 
@@ -262,6 +254,10 @@ footer {
 
     .sidebar li {
         font-size: 0.8rem;
+    }
+
+    #fsCarousel .carousel-inner .carousel-item img {
+        height: 300px;
     }
 }
 
