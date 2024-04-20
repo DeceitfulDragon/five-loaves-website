@@ -177,8 +177,42 @@
     transform: rotate(90deg);
 }
 
-/* Cards, Volunteering, and About Us Sections */
 
+/* Newsletter styling */
+.newsletter-sidebar {
+    height: 100%;
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+}
+
+/* Newsletter form styling */
+.newsletter-input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Link buttons on the sidebar */
+.link-button {
+    background-color: #f8f9fa;
+    color: #333;
+    border-radius: 15px;
+    border: solid var(--secondaryColor) 1px;
+    transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #e9ecef;
+    text-decoration: none;
+    color: #004d2c;
+}
+
+.link-button-item {
+    overflow: hidden;
+}
+
+/* Cards, Volunteering, and About Us Sections */
 .about-image {
     border-radius: 15px;
     max-width: 60%;
@@ -207,6 +241,51 @@
 
 .card-text {
     color: var(--secondaryColor);
+}
+
+.arrow-icon {
+    transition: transform 0.3s ease;
+}
+
+.rotate-dropdown {
+    transform: rotate(90deg);
+}
+
+.card-header {
+    cursor: pointer;
+    border-radius: 15px; /* Rounded corners for the header */
+}
+
+.card-header h2, .card-header time {
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.card-header h2 {
+    text-decoration: underline;
+}
+
+/* Styling for author and image */
+.post-author img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; /* Fully rounded corners for circular images */
+}
+
+/* Additional styles for card and collapse sections */
+.card {
+    border-radius: 15px; /* Rounded corners for the entire card */
+    overflow: hidden; /* Ensures no content can overflow the rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: Adds shadow for depth */
+}
+
+.collapse {
+    border-radius: 0 0 15px 15px; /* Only round bottom corners for the collapse content */
+}
+
+/* Enhancing the hover effect for better user feedback */
+.card-header:hover {
+    background-color: #f8f9fa; /* Light hover effect on the header */
 }
 
 /* Responsive Design Adjustments */
@@ -246,6 +325,8 @@
         font-size: 0.9rem;
     }
 }
+
+
 
 @media (max-width: 576px) {
     .about-us img {
