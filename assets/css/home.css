@@ -190,3 +190,258 @@ footer {
         height: 300px;
     }
 }
+
+.distribution, .po-box, .volunteer-link {
+    text-align: center;
+}
+
+/* Distribution Cards */
+.distribution-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 -15px;
+}
+
+.distribution-box {
+    border: 1px solid var(--secondaryColor);
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    padding: 15px;
+    background-color: #fff;
+    margin: 10px;
+    flex-basis: calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+}
+
+.distribution-box li {
+    text-align: left;
+}
+
+.distribution-box:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+}
+
+.distribution-box figure, .distribution-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.distribution-box h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.distribution-box p, .distribution-box a, .distribution-box ul {
+    font-size: 1rem;
+    padding: 0 10px;
+}
+
+.po-box {
+    border-style: dashed;
+    padding: 1.5%;
+}
+
+
+/* CSFP Container */
+.csfp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+/* Banner image styling */
+.csfp-banner .banner-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Details section styling */
+.csfp-details {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Text section styling */
+.csfp-text {
+    flex-basis: 50%;
+    padding-right: 20px;
+    border-right: 2px solid #dee2e6
+}
+
+/* Image styling */
+.csfp-image .box-img {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+}
+
+/* List styling */
+.csfp-list {
+    flex-basis: 50%;
+    padding-left: 20px;
+}
+
+.csfp-list h3 {
+    margin-bottom: 10px;
+    color: var(--mainColor);
+}
+
+.csfp-list li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+
+.bottom-img {
+    width: 100%;
+    height: auto;
+}
+
+/* Organizations */
+.org-row {
+    cursor: pointer;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #f8f9fa;
+}
+
+.org-row header {
+    padding: 30px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 15px;
+}
+
+.org-row-title {
+    font-weight: bold;
+    color: var(--mainColor);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.arrow-icon {
+    transition: transform 0.3s ease;
+}
+
+.org-row-desc {
+    font-weight: bold;
+    color: var(--secondaryColor);
+}
+
+.org-row-image {
+    max-width: 85%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.org-row-extra {
+    padding: 15px;
+    border-top: 3px solid var(--tertiaryColor);
+}
+
+.org-row:hover {
+    background-color: #e9ecef;
+}
+
+/* For rotating the dropdown arrow via javascript */
+.rotate-dropdown {
+    transform: rotate(90deg);
+}
+
+/* Cards, Volunteering, and About Us Sections */
+
+.about-image {
+    border-radius: 15px;
+    max-width: 60%;
+}
+
+.card, .volunteer-image {
+    border-radius: 15px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.card-body {
+    padding: 15px;
+    background-color: var(--textWhite);
+    border-radius: 15px;
+}
+
+.card-title, .volunteer-heading {
+    color: var(--mainColor);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 2rem;
+}
+
+.card-text {
+    color: var(--secondaryColor);
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 992px) {
+    .about-us img, .card-title, .volunteer-heading {
+        font-size: 1.75rem;
+        max-width: 50%; 
+    }
+
+    .card-text, .volunteer-text, .volunteer-link {
+        font-size: 1.1rem;
+    }
+
+    .card, .card-body {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .distribution-row, .card {
+        flex-direction: column;
+    }
+
+    .distribution-box {
+        flex-basis: 100%;
+    }
+
+    .distribution-box img {
+        max-width: 100%;
+    }
+
+    .card-title, .volunteer-heading {
+        font-size: 1.5rem;
+    }    
+
+    .card-text, .volunteer-text, .volunteer-link {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-us img {
+        max-width: 100%;
+    }
+}
