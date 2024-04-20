@@ -56,11 +56,11 @@
     padding: 1.5%;
 }
 
-/* Banner Styling */
+/* CSFP banner styling */
 .banner img {
     width: 100%;
     height: auto;
-    max-height: 150px;
+    max-height: 400px;
     object-fit: cover;
 }
 
@@ -155,7 +155,7 @@
     max-width: 100%;
 }
 
-.card-body, .about-us-main .container-fluid {
+.card-body {
     padding: 15px;
     background-color: var(--textWhite);
     border-radius: 15px;

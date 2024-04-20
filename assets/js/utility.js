@@ -8,6 +8,7 @@ $(document).ready(function() {
         window.location.href = donateLink;
     });
 
+    // For changing the phone numbers
     $('#FoodShelfPhone').each(function() {
         $(this).text(foodShelfNumber); // Change the text of each element
     });
