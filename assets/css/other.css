@@ -253,7 +253,7 @@
 
 .card-header {
     cursor: pointer;
-    border-radius: 15px; /* Rounded corners for the header */
+    border-radius: 15px;
 }
 
 .card-header h2, .card-header time {
@@ -269,26 +269,23 @@
 .post-author img {
     width: 45px;
     height: 45px;
-    border-radius: 50%; /* Fully rounded corners for circular images */
+    border-radius: 50%; /* circular */
 }
 
-/* Additional styles for card and collapse sections */
 .card {
-    border-radius: 15px; /* Rounded corners for the entire card */
-    overflow: hidden; /* Ensures no content can overflow the rounded corners */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: Adds shadow for depth */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .collapse {
-    border-radius: 0 0 15px 15px; /* Only round bottom corners for the collapse content */
+    border-radius: 0 0 15px 15px;
 }
 
-/* Enhancing the hover effect for better user feedback */
 .card-header:hover {
-    background-color: #f8f9fa; /* Light hover effect on the header */
+    background-color: #f8f9fa;
 }
 
-/* Responsive Design Adjustments */
 @media (max-width: 992px) {
     .about-us img, .card-title, .volunteer-heading {
         font-size: 1.75rem;
@@ -325,8 +322,6 @@
         font-size: 0.9rem;
     }
 }
-
-
 
 @media (max-width: 576px) {
     .about-us img {
