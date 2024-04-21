@@ -36,7 +36,7 @@
 }
 
 .distribution-box figure, .distribution-box img {
-    width: 100%;
+    width: 90%;
     height: auto;
     border-radius: 15px;
 }
@@ -56,25 +56,25 @@
     padding: 1.5%;
 }
 
-
+/* CSFP PAGE (2) */
 /* CSFP Container */
 .csfp-container {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-bottom: 20px;
 }
 
-/* Banner image styling */
-.csfp-banner .banner-img {
+/* Banner image */
+.csfp-banner {
+    margin-bottom: 5px;
     width: 100%;
-    height: auto;
+    height: 20%;
     max-height: 400px;
     object-fit: cover;
     border-radius: 15px;
 }
 
-/* Details section styling */
+/* Details section */
 .csfp-details {
     display: flex;
     flex-direction: row;
@@ -84,21 +84,21 @@
     margin-top: 10px;
 }
 
-/* Text section styling */
+/* Text section */
 .csfp-text {
     flex-basis: 50%;
     padding-right: 20px;
     border-right: 2px solid #dee2e6
 }
 
-/* Image styling */
-.csfp-image .box-img {
-    width: 150px;
+/* Image */
+.csfp-image {
+    width: 20%;
     height: auto;
     margin-left: 20px;
 }
 
-/* List styling */
+/* List */
 .csfp-list {
     flex-basis: 50%;
     padding-left: 20px;
@@ -113,31 +113,45 @@
     margin-bottom: 5px;
     line-height: 1.5;
 }
-
-
+/* Sign up image */
 .bottom-img {
-    width: 100%;
+    width: 90%;
     height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid #dedede 1px;
+    border-radius: 15px;
+}
+.signup-section ul {
+    display: flex;
+    justify-content: center;
 }
 
+.signup-section li {
+    color: var(--secondaryColor);
+    font-weight: bold;
+    display: inline-block;
+    padding-right: 15px;
+}
+/* ORGANIZATIONS PAGE (3) */
 /* Organizations */
 .org-row {
     cursor: pointer;
-    margin: 5px;
+    margin: 10px;
     display: flex;
     align-items: center;
     border-radius: 15px;
     background-color: #f8f9fa;
+    box-shadow: 5px 5px #dbdbdb;
 }
 
 .org-row header {
-    padding: 30px;
     transition: background-color 0.3s ease;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border-radius: 15px;
 }
 
 .org-row-title {
@@ -158,9 +172,9 @@
 }
 
 .org-row-image {
-    max-width: 85%;
+    max-width: 55%;
     height: auto;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .org-row-extra {
@@ -176,7 +190,6 @@
 .rotate-dropdown {
     transform: rotate(90deg);
 }
-
 
 /* Newsletter styling */
 .newsletter-sidebar {
