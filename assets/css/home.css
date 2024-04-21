@@ -160,11 +160,39 @@ h1, h2, h3, h4, h5 {
 footer {
     background-color: var(--mainColor);
     color: var(--textWhite);
-    text-align: center;
-    padding: 10px 0;
     width: 100%;
 }
 
+footer section {
+    margin: 10px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    flex-direction: row;
+}
+
+footer li {
+    color: var(--textWhite);
+    font-weight: 200;
+    padding: 5px;
+    text-align: center;
+    margin: 0px 20px; /* Adjusted margins for horizontal layout */
+    border-radius: 10px;
+    background-color: var(--navbar-active-color);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer li a {
+    color: var(--textWhite);
+}
 /* Responsive changes */
 @media (max-width: 992px) {
     body {
@@ -195,5 +223,14 @@ footer {
 
     #fsCarousel .carousel-inner .carousel-item img {
         height: 300px;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    footer li, footer li a {
+        width: 100%;
+        margin: 10px 0;
     }
 }
