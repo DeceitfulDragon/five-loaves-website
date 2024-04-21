@@ -1,4 +1,3 @@
-/* General Resets and Styling */
 * {
     box-sizing: border-box;
 }
@@ -23,10 +22,12 @@ html, body {
 }
 
 body {
+    overflow-x:hidden;
     padding-top: 6%;
     font-family: "Roboto", sans-serif;
     background-color: var(--tertiaryColor);
-    min-height: 100vh; /* Use a minimum viewport height */
+     /* Min viewport height */
+    min-height: 100vh;
 }
 
 main {
@@ -51,7 +52,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .row > * {
-    padding: 15px;
+    padding: 10px;
 }
 
 /* Changing bootstrap's primary button to fit */
@@ -71,7 +72,7 @@ h1, h2, h3, h4, h5 {
     color: var(--secondaryColor);
 }
 
-/* Navbar Styles */
+/* Navbar */
 .navbar-custom {
     background-color: var(--mainColor);
     padding: 1rem;
@@ -111,13 +112,40 @@ h1, h2, h3, h4, h5 {
     border-radius: 15px;
 }
 
+#fsCarousel {
+    max-width: 85%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.carousel-inner .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 10%;
+}
+
 .video {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
+    border: none;
+    overflow: hidden;
 }
 
-/* Sidebar Styles */
+/* Sidebar */
 .sidebar {
     border-left: 2px solid var(--navbar-border-color);
     padding: 20px;
@@ -134,14 +162,7 @@ h1, h2, h3, h4, h5 {
     font-size: 0.9rem;
 }
 
-.sidebar img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 15px;
-}
-
-/* Sidebar button styles */
+/* Sidebar buttons */
 .sidebar-buttons, .sidebar-buttons:link, .sidebar-buttons:visited {
     border: 1px solid black;
     background-color: var(--secondaryColor);
@@ -181,7 +202,7 @@ footer li {
     font-weight: 200;
     padding: 5px;
     text-align: center;
-    margin: 0px 20px; /* Adjusted margins for horizontal layout */
+    margin: 0px 20px;
     border-radius: 10px;
     background-color: var(--navbar-active-color);
     flex: 1;
@@ -193,6 +214,11 @@ footer li {
 footer li a {
     color: var(--textWhite);
 }
+
+footer li a:hover {
+    color: #cfcfcf;
+}
+
 /* Responsive changes */
 @media (max-width: 992px) {
     body {

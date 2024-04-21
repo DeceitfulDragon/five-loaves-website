@@ -13,7 +13,7 @@
 .distribution-box {
     border: 1px solid var(--secondaryColor);
     border-radius: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px #0000001a;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     padding: 15px;
     background-color: #fff;
@@ -35,8 +35,8 @@
     transform: translateY(-5px);
 }
 
-.distribution-box figure, .distribution-box img {
-    width: 90%;
+.distribution-box img {
+    width: 70%;
     height: auto;
     border-radius: 15px;
 }
@@ -69,7 +69,7 @@
     margin-bottom: 5px;
     width: 100%;
     height: 20%;
-    max-height: 400px;
+    max-height: 200px;
     object-fit: cover;
     border-radius: 15px;
 }
@@ -84,24 +84,34 @@
     margin-top: 10px;
 }
 
+.csfp-text {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 /* Text section */
 .csfp-text {
     flex-basis: 50%;
     padding-right: 20px;
-    border-right: 2px solid #dee2e6
+    border-right: 2px solid #dee2e6;
+    border-bottom: none;
 }
 
 /* Image */
 .csfp-image {
-    width: 20%;
+    width: 40%;
     height: auto;
+    max-height: 135px;
     margin-left: 20px;
+    margin-bottom: 5px;
+    border-radius: 15px;
 }
 
 /* List */
 .csfp-list {
     flex-basis: 50%;
-    padding-left: 20px;
+    padding-left: 5px;
 }
 
 .csfp-list h3 {
@@ -113,26 +123,31 @@
     margin-bottom: 5px;
     line-height: 1.5;
 }
-/* Sign up image */
-.bottom-img {
-    width: 90%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: solid #dedede 1px;
-    border-radius: 15px;
+
+.csfp-signup {
+    text-align: center;
+    justify-content: center;
 }
-.signup-section ul {
+
+.csfp-signup ul {
     display: flex;
     justify-content: center;
 }
 
-.signup-section li {
+.csfp-signup li {
     color: var(--secondaryColor);
     font-weight: bold;
     display: inline-block;
     padding-right: 15px;
+}
+
+/* Sign up image */
+.csfp-signup img {
+    width: 60%;
+    height: auto;
+    display: block;
+    border: solid #dedede 1px;
+    border-radius: 15px;
 }
 /* ORGANIZATIONS PAGE (3) */
 /* Organizations */
@@ -333,6 +348,21 @@
 
     .card-text, .volunteer-text, .volunteer-link {
         font-size: 0.9rem;
+    }
+
+    .csfp-text {
+        border-bottom: 2px solid #dee2e6;
+        border-right: none;
+    }
+
+    .csfp-image {
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .csfp-image:last-child {
+        margin-right: 0;
     }
 }
 
