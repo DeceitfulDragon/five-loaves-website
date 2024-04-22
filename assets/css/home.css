@@ -203,7 +203,7 @@ footer li {
     text-align: center;
     margin: 0px 20px;
     border-radius: 10px;
-    background-color: var(--navbar-active-color);
+    background-color: #006234;
     flex: 1;
     display: flex;
     align-items: center;
