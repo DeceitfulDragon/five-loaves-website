@@ -17,12 +17,12 @@
     padding: 15px;
     background-color: #fff;
     margin: 10px;
-    flex-basis: calc(33.333% - 20px); /* Calculation adjusted to ensure no overflow */
+    flex-basis: calc(33.333% - 20px);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 100%; /* Prevents overflow by not exceeding container width */
+    max-width: 100%;
 }
 
 .distribution-box li {
@@ -58,7 +58,11 @@
 }
 
 /* CSFP PAGE (2) */
-/* CSFP Container */
+
+.csfp-main {
+    margin-bottom: -40px;
+}
+
 .csfp-container {
     display: flex;
     flex-direction: column;
@@ -126,8 +130,12 @@
 }
 
 .csfp-signup {
-    text-align: center;
-    justify-content: center;
+    text-align: center; 
+    height: 100%;
+}
+
+.csfp-signup p {
+    margin-bottom: .5rem;
 }
 
 .csfp-signup ul {
@@ -144,11 +152,10 @@
 
 /* Sign up image */
 .csfp-signup img {
-    width: 60%;
+    width: 85%;
     height: auto;
     display: block;
-    border: solid #dedede 1px;
-    border-radius: 15px;
+    margin: 0 auto;
 }
 /* ORGANIZATIONS PAGE (3) */
 /* Organizations */
@@ -216,7 +223,7 @@
     border-radius: 15px;
 }
 
-/* Newsletter form styling */
+/* Newsletter form */
 .newsletter-input {
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -249,7 +256,6 @@
 
 .card, .volunteer-image {
     border-radius: 15px;
-    margin-bottom: 20px;
     max-width: 100%;
 }
 
