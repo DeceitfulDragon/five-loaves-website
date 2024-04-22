@@ -7,23 +7,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0 -15px;
 }
 
 .distribution-box {
     border: 1px solid var(--secondaryColor);
     border-radius: 15px;
-    box-shadow: 0 2px 5px #0000001a;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
     padding: 15px;
     background-color: #fff;
     margin: 10px;
-    flex-basis: calc(33.333% - 20px);
+    flex-basis: calc(33.333% - 20px); /* Calculation adjusted to ensure no overflow */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 100%;
+    max-width: 100%; /* Prevents overflow by not exceeding container width */
 }
 
 .distribution-box li {
@@ -39,6 +38,7 @@
     width: 70%;
     height: auto;
     border-radius: 15px;
+    max-width: 100%;
 }
 
 .distribution-box h3 {
@@ -46,9 +46,10 @@
     font-size: 1.5rem;
 }
 
-.distribution-box p, .distribution-box a, .distribution-box ul {
+.distribution-box h3, .distribution-box p, .distribution-box a, .distribution-box ul {
     font-size: 1rem;
     padding: 0 10px;
+    overflow-wrap: break-word;
 }
 
 .po-box {
@@ -320,18 +321,8 @@
         max-width: 50%; 
     }
 
-    .card-text, .volunteer-text, .volunteer-link {
-        font-size: 1.1rem;
-    }
-
     .card, .card-body {
         padding: 10px;
-    }
-}
-
-@media (max-width: 1000px) {
-    .distribution-row, .card {
-        flex-direction: column;
     }
 
     .distribution-box {
@@ -339,7 +330,7 @@
     }
 
     .distribution-box img {
-        max-width: 100%;
+        width: 100%;
     }
 
     .card-title, .volunteer-heading {
@@ -366,8 +357,18 @@
     }
 }
 
+@media (max-width: 768px) {
+    .distribution-box {
+        flex-basis: 100%;
+    }
+}
+
 @media (max-width: 576px) {
     .about-us img {
         max-width: 100%;
+    }
+    .distribution-box {
+        padding: 10px;
+        flex-basis: 100%;
     }
 }
