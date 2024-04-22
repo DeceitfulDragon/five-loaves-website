@@ -317,6 +317,34 @@
     background-color: #f8f9fa;
 }
 
+.donation-card {
+    padding: 20px;
+    margin-top: -15px;
+    margin-bottom: -35px;
+}
+
+.donation-card h3 {
+    text-align: left;
+}
+
+.donation-card img {
+    display: block;
+    border-radius: 15px;
+    max-height: 170px;
+}
+
+.wrap-list {
+    column-count: 2;
+    column-gap: 20px;
+    padding: 0;
+    list-style-type: square;
+}
+
+.wrap-list li {
+    break-inside: avoid;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 992px) {
     .about-us img, .card-title, .volunteer-heading {
         font-size: 1.75rem;
