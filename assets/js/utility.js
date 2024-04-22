@@ -29,17 +29,14 @@ $(document).ready(function() {
     });
 
 
-    // Rotates the arrow on the organization cards
-    $('.org-row').each(function() {
-        var headerSection = $(this);
-        var dropdownId = headerSection.data('target');
-
-        $(dropdownId).on('show.bs.collapse', function () {
-            headerSection.find('.arrow-icon').addClass('rotate-dropdown');
-        }).on('hide.bs.collapse', function () {
-            headerSection.find('.arrow-icon').removeClass('rotate-dropdown');
-        });
+    // Rotates the arrow on the organization cards and opens the dropdown
+    $('.org-row').on('click', function() {
+        var targetID = $(this).data('target');
+        $('.collapse').not(targetID).collapse('hide');
+        $(targetID).collapse('toggle');
+        $(this).find('.arrow-icon').toggleClass('rotate-dropdown');
     });
+
 
     // GET blog posts and display some simplified versions in the newsletter
     if (document.URL.includes("4-newsletter.html") ) {
@@ -71,7 +68,7 @@ $(document).ready(function() {
                     $('#blog-posts').append(postElement);
                 });
         
-                // Add event listener to handle the rotation of the arrow icon and toggle class for opened state
+                // Arrow rotation
                 $('.card-header').on('click', function() {
                     $(this).find('.arrow-icon').toggleClass('rotate-dropdown');
                 });

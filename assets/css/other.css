@@ -209,10 +209,6 @@
     background-color: #e9ecef;
 }
 
-/* For rotating the dropdown arrow via javascript */
-.rotate-dropdown {
-    transform: rotate(90deg);
-}
 
 /* Newsletter styling */
 .newsletter-sidebar {
