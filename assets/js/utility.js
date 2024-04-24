@@ -64,6 +64,7 @@ $('#thriftStoreMap').attr('src', config.thriftStoreMapLink);
 $('.cityAndState').text(config.cityAndState);
 $('#districtOffice').text(config.districtOffice);
 $('#districtOfficeMail').text(config.districtOfficeMail);
+$('#comeMealLocation').text(config.comeMealLocation);
 
 // Adds months with their respective locations in the Come Meal organization
 populateCommunityList()
