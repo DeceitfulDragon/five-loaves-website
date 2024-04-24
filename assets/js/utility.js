@@ -3,7 +3,18 @@ const foodShelfNumber = '(715)-246-5255';
 const thriftStoreNumber = '(715)-246-0066';
 
 $(document).ready(function() {
+
+    adjustContentMargin();
+    $(window).resize(adjustContentMargin);
+
+    // For changing the padding based on the height of the navbar
+    // Did it this way so people can scale the web page without the navbar overlapping things
+    function adjustContentMargin() {
+        var navbarHeight = $('.navbar-custom').outerHeight(); // Get the outer height of the navbar
+        $('main').css('padding-top', navbarHeight); // main padding
+    }
     
+    // Donate button link
     $('#DonateButton').click(function() {
         window.location.href = donateLink;
     });
