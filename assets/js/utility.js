@@ -49,6 +49,15 @@ $('#DonateButton').click(function () {
     window.location.href = config.donateLink;
 });
 
+// Facebook and blog links
+$('#fiveLoavesBlog').attr('href', config.fiveLoavesBlog);
+$('#foodShelfFacebook').attr('href', config.foodShelfFacebook);
+$('#thriftStoreFacebook').attr('href', config.thriftStoreFacebook);
+
+// Google Form Links
+$('#csfpFormLink').attr('href', config.csfpFormLink);
+$('#volunteerFormLink').attr('href', config.volunteerFormLink);
+
 // Changes the google maps location source
 $('#foodShelfMap').attr('src', config.foodShelfMapLink);
 $('#thriftStoreMap').attr('src', config.thriftStoreMapLink);
