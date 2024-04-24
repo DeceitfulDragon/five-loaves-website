@@ -1,62 +1,76 @@
-const donateLink = 'https://www.zeffy.com/en-US/donation-form/648d7641-d6f5-4c1c-a9b0-9b4f34568973';
-const foodShelfNumber = '(715)-246-5255';
-const thriftStoreNumber = '(715)-246-0066';
+// Grabs config.js values so that things can be changed easily, future-proofing
+import { config } from './config.js';
 
-$(document).ready(function() {
+adjustContentMargin();
+$(window).resize(adjustContentMargin);
 
-    adjustContentMargin();
-    $(window).resize(adjustContentMargin);
+// For changing the padding based on the height of the navbar
+// Did it this way so people can scale the web page without the navbar overlapping things
+function adjustContentMargin() {
+    var navbarHeight = $('.navbar-custom').outerHeight(); // Get the outer height of the navbar
+    $('main').css('padding-top', navbarHeight); // main padding
+}
 
-    // For changing the padding based on the height of the navbar
-    // Did it this way so people can scale the web page without the navbar overlapping things
-    function adjustContentMargin() {
-        var navbarHeight = $('.navbar-custom').outerHeight(); // Get the outer height of the navbar
-        $('main').css('padding-top', navbarHeight); // main padding
+// For the Food Shelf Phone number
+$('#FoodShelfPhone').each(function () {
+    var currentText = $(this).text().trim(); // Get the current text and trim any whitespace
+    if (currentText.length > 0) {
+        $(this).text(currentText + " " + config.foodShelfNumber); // Append the phone number if text exists
+    } else {
+        $(this).text(config.foodShelfNumber); // Set the phone number if no text exists
     }
-    
-    // Donate button link
-    $('#DonateButton').click(function() {
-        window.location.href = donateLink;
-    });
+});
 
-    // For the Food Shelf Phone number
-    $('#FoodShelfPhone').each(function() {
-        var currentText = $(this).text().trim(); // Get the current text and trim any whitespace
-        if (currentText.length > 0) {
-            $(this).text(currentText + " " + foodShelfNumber); // Append the phone number if text exists
-        } else {
-            $(this).text(foodShelfNumber); // Set the phone number if no text exists
-        }
-    });
-    
-    // For the Thrift Store Phone number
-    $('#ThriftStorePhone').each(function() {
-        var currentText = $(this).text().trim(); // Get the current text and trim any whitespace
-        if (currentText.length > 0) {
-            $(this).text(currentText + " " + thriftStoreNumber); // Append the phone number if text exists
-        } else {
-            $(this).text(thriftStoreNumber); // Set the phone number if no text exists
-        }
-    });
+// For the Thrift Store Phone number
+$('#ThriftStorePhone').each(function () {
+    var currentText = $(this).text().trim(); // Get the current text and trim any whitespace
+    if (currentText.length > 0) {
+        $(this).text(currentText + " " + config.thriftStoreNumber); // Append the phone number if text exists
+    } else {
+        $(this).text(config.thriftStoreNumber); // Set the phone number if no text exists
+    }
+});
+
+// Sets emails and their links
+$('#foodShelfEmailLink').attr('href', `mailto:${config.foodShelfEmail}`);
+$('#foodShelfEmail').text(config.foodShelfEmail);
+$('#thriftStoreEmailLink').attr('href', `mailto:${config.thriftStoreEmail}`);
+$('#thriftStoreEmail').text(config.thriftStoreEmail);
+
+// Sets locations
+$('#foodShelfLocation').text(config.foodShelfLocation);
+$('#thriftStoreLocation').text(config.thriftStoreLocation);
+
+// PO box, changes new line to "<br>"
+$('#poBox').html(config.poBox.replace(/\n/g, '<br>'));
+
+// Donate button link
+$('#DonateButton').click(function () {
+    window.location.href = config.donateLink;
+});
+
+// Changes the google maps location source
+$('#foodShelfMap').attr('src', config.foodShelfMapLink);
+$('#thriftStoreMap').attr('src', config.thriftStoreMapLink);
 
 
-    // Rotates the arrow on the organization cards and opens the dropdown
-    $('.org-row').on('click', function() {
-        var targetID = $(this).data('target');
-        $('.collapse').not(targetID).collapse('hide');
-        $(targetID).collapse('toggle');
-        $(this).find('.arrow-icon').toggleClass('rotate-dropdown');
-    });
+// Rotates the arrow on the organization cards and opens the dropdown
+$('.org-row').on('click', function () {
+    var targetID = $(this).data('target');
+    $('.collapse').not(targetID).collapse('hide');
+    $(targetID).collapse('toggle');
+    $(this).find('.arrow-icon').toggleClass('rotate-dropdown');
+});
 
 
-    // GET blog posts and display some simplified versions in the newsletter
-    if (document.URL.includes("4-newsletter.html") ) {
-        $.ajax({
-            url: 'https://fiveloaveswi.org/wp-json/wp/v2/posts?_embed&per_page=8',
-            method: 'GET',
-            success: function(posts) {
-                posts.forEach(function(post, index) {
-                    var postElement = `
+// GET blog posts and display some simplified versions in the newsletter
+if (document.URL.includes("4-newsletter.html")) {
+    $.ajax({
+        url: 'https://fiveloaveswi.org/wp-json/wp/v2/posts?_embed&per_page=8',
+        method: 'GET',
+        success: function (posts) {
+            posts.forEach(function (post, index) {
+                var postElement = `
                         <article class="card mb-3">
                             <header class="card-header d-flex justify-content-between align-items-center" id="heading-${index}" data-toggle="collapse" data-target="#collapse-${index}" aria-expanded="false" aria-controls="collapse-${index}">
                                 <section class="d-flex align-items-center">
@@ -76,18 +90,17 @@ $(document).ready(function() {
                             </section>
                         </article>
                     `;
-                    $('#blog-posts').append(postElement);
-                });
-        
-                // Arrow rotation
-                $('.card-header').on('click', function() {
-                    $(this).find('.arrow-icon').toggleClass('rotate-dropdown');
-                });
-            },
-            error: function(error) {
-                console.log("Error fetching posts: ", error);
-                $('#blog-posts').append('<p class="alert alert-danger">Failed to load posts.</p>');
-            }
-        });
-    }
-});
+                $('#blog-posts').append(postElement);
+            });
+
+            // Arrow rotation
+            $('.card-header').on('click', function () {
+                $(this).find('.arrow-icon').toggleClass('rotate-dropdown');
+            });
+        },
+        error: function (error) {
+            console.log("Error fetching posts: ", error);
+            $('#blog-posts').append('<p class="alert alert-danger">Failed to load posts.</p>');
+        }
+    });
+}

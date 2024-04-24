@@ -23,3 +23,7 @@ One of my original thoughts was to use an animation library and make things have
 
 I started with an image editing program before I even got into the programming side of things. I figured that I'd only really need a consistent header and footer, but the main content would differ between pages.
 ![Development Mockup](devmockup.png)
+
+I was also thinking heavily about future-proofing information on the website should something need to be changed by someone who may not be as knowledgable about web development. I opted for a config.js file that would hold important values that can be imported from utility.js (which will loop through IDs and such to set text and attributes based on the values of the config file!)
+The image below is blurred as I don't want to share the non-profit's (possibly) private details on github.
+![Config Screenshot](config.png)
