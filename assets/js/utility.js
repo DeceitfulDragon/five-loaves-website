@@ -45,9 +45,7 @@ $('#thriftStoreLocation').text(config.thriftStoreLocation);
 $('#poBox').html(config.poBox.replace(/\n/g, '<br>'));
 
 // Donate button link
-$('#DonateButton').click(function () {
-    window.location.href = config.donateLink;
-});
+$('#DonateButton').click(function () { window.location.href = config.donateLink; });
 
 // Facebook and blog links
 $('#fiveLoavesBlog').attr('href', config.fiveLoavesBlog);
@@ -62,6 +60,22 @@ $('#volunteerFormLink').attr('href', config.volunteerFormLink);
 $('#foodShelfMap').attr('src', config.foodShelfMapLink);
 $('#thriftStoreMap').attr('src', config.thriftStoreMapLink);
 
+// Locations
+$('.cityAndState').text(config.cityAndState);
+$('#districtOffice').text(config.districtOffice);
+$('#districtOfficeMail').text(config.districtOfficeMail);
+
+// Adds months with their respective locations in the Come Meal organization
+populateCommunityList()
+
+function populateCommunityList() {
+    const ul = $(`.comeMealList`);
+    Object.entries(config.comeMonths).forEach(([month, community]) => {
+        // make an li element for each month in the config
+        const li = $('<li>').text(`${month} - ${community}`);
+        ul.append(li);
+    });
+}
 
 // Rotates the arrow on the organization cards and opens the dropdown
 $('.org-row').on('click', function () {
