@@ -144,7 +144,9 @@ h1, h2, h3, h4, h5 {
     border: none;
     overflow: hidden;
 }
-
+aside {
+    display: block !important; opacity: 1 !important; visibility: visible !important;
+}
 /* Sidebar */
 .sidebar {
     border-left: 2px solid var(--navbar-border-color);
