@@ -93,7 +93,6 @@ $('#blog-posts').on('click', '.card-header', function () {
 
 // GET blog posts and display some simplified versions in the newsletter
 if (document.URL.includes("newsletter.html")) {
-    console.log("here1");
     $.ajax({
         url: 'https://fiveloaveswi.org/wp-json/wp/v2/posts?_embed',
         method: 'GET',

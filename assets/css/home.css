@@ -163,8 +163,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Sidebar buttons */
-.sidebar-buttons, .sidebar-buttons:link, .sidebar-buttons:visited {
-    border: 1px solid black;
+.sidebar-buttons, .sidebar-buttons:link, .sidebar-buttons:visited, .sidebar-buttons a {
     background-color: var(--secondaryColor);
     color: var(--textWhite);
     border-radius: 7px;
