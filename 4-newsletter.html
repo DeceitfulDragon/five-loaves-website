@@ -56,49 +56,51 @@
         </nav>
     </header>
 
-    <main class="container-fluid">
-        <section class="row">
-            <!-- Main content area -->
-            <article class="col-md-10">
-                <section id="blog-posts">
-                    <!-- Dynamic posts will show up here -->
-                </section>
+    <main class="row flex-grow-1 container-fluid">
+        <section class="col-md-9 newsletter-container">
+            <h1 class="text-center">Blog Posts:</h1>
+            <p class="text-center"><i class="fa-solid fa-circle-exclamation"></i> You can always check out our facebook pages or email our businesses to find out more about what's new or what events are going on!</p>
+            <article id="blog-posts">
+                <!-- Javascript creates blog posts here -->
             </article>
-            <!-- Sidebar -->
-            <aside class="col-md-2 newsletter-sidebar">
-                <section class="mb-4">
-                    <header>
-                        <h4>Sign up for our Newsletter</h4>
-                    </header>
-                    <form>
-                        <fieldset class="mb-3">
-                            <input type="email" class="form-control newsletter-input mb-2" placeholder="Enter your email">
-                            <button type="submit" class="btn btn-primary btn-block">Subscribe</button>
-                        </fieldset>
-                    </form>
-                    <section class="social-links mt-4">
-                        <ul class="list-unstyled">
-                            <li class="link-button-item mb-2">
-                                <a class="link-button d-block p-3" id="fiveLoavesBlog" href="">
-                                    <i class="fas fa-blog mr-2"></i>Five Loaves Blog
-                                </a>
-                            </li>
-                            <li class="link-button-item mb-2">
-                                <a class="link-button d-block p-3" id="foodShelfFacebook" href="">
-                                    <i class="fab fa-facebook mr-2"></i>Food Shelf Facebook
-                                </a>
-                            </li>
-                            <li class="link-button-item mb-2">
-                                <a class="link-button d-block p-3" id="thriftStoreFacebook" href="">
-                                    <i class="fab fa-facebook mr-2"></i>Thrift Store Facebook
-                                </a>
-                            </li>
-                        </ul>
-                    </section>
-                </section>
-            </aside>
-            
         </section>
+    
+        <!-- Newsletter Sidebar -->
+        <aside class="col-md-3 rounded">
+            <section class="newsletter-sidebar mb-4">
+                <header>
+                    <h4>Sign up for our Newsletter</h4>
+                </header>
+                <form>
+                    <fieldset class="mb-3">
+                        <input type="email" class="form-control newsletter-input mb-2" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary btn-block">Subscribe</button>
+                    </fieldset>
+                </form>
+                <section>
+                    <img src="./assets/images/logo.webp" alt="Special Event" class="img-fluid">
+                </section>
+                <section class="social-links mt-4">
+                    <ul class="list-unstyled">
+                        <li class="link-button-item mb-2">
+                            <a class="link-button d-block p-3" id="fiveLoavesBlog" href="">
+                                <i class="fas fa-blog mr-2"></i>Five Loaves Blog
+                            </a>
+                        </li>
+                        <li class="link-button-item mb-2">
+                            <a class="link-button d-block p-3" id="foodShelfFacebook" href="">
+                                <i class="fab fa-facebook mr-2"></i>Food Shelf Facebook
+                            </a>
+                        </li>
+                        <li class="link-button-item mb-2">
+                            <a class="link-button d-block p-3" id="thriftStoreFacebook" href="">
+                                <i class="fab fa-facebook mr-2"></i>Thrift Store Facebook
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </aside>
     </main>
 
     <footer>

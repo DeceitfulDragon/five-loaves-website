@@ -86,44 +86,45 @@ $('.org-row').on('click', function () {
     $(this).find('.arrow-icon').toggleClass('rotate-dropdown');
 });
 
+$('#blog-posts').on('click', '.card-header', function () {
+    $(this).find('.arrow-icon').toggleClass('rotate-dropdown');
+});
+
 
 // GET blog posts and display some simplified versions in the newsletter
-if (document.URL.includes("4-newsletter.html")) {
+if (document.URL.includes("newsletter.html")) {
+    console.log("here1");
     $.ajax({
-        url: 'https://fiveloaveswi.org/wp-json/wp/v2/posts?_embed&per_page=8',
+        url: 'https://fiveloaveswi.org/wp-json/wp/v2/posts?_embed',
         method: 'GET',
         success: function (posts) {
-            posts.forEach(function (post, index) {
-                var postElement = `
-                        <article class="card mb-3">
-                            <header class="card-header d-flex justify-content-between align-items-center" id="heading-${index}" data-toggle="collapse" data-target="#collapse-${index}" aria-expanded="false" aria-controls="collapse-${index}">
-                                <section class="d-flex align-items-center">
-                                    <i class="fas fa-chevron-right mr-2 arrow-icon"></i>
-                                    <h2 class="mb-0 flex-grow-1 mainColorText"><b>${post.title.rendered}</b></h2>
-                                    <time datetime="${post.date}" class="secondaryColorText"><strong>${new Date(post.date).toLocaleDateString()}</strong></time>
-                                </section>
-                                <aside class="post-author ml-4 d-flex align-items-center">
-                                    <img src="${post._embedded.author[0].avatar_urls[48]}" alt="Author: ${post._embedded.author[0].name}" class="rounded-circle mr-2">
-                                    <span>${post._embedded.author[0].name}</span>
-                                </aside>
-                            </header>
-                            <section class="collapse" id="collapse-${index}" aria-labelledby="heading-${index}" data-parent="#blog-posts">
-                                <article class="card-body">${post.excerpt.rendered}
-                                    <a href="${post.link}" class="btn btn-primary mt-3">Read More</a>
-                                </article>
-                            </section>
+            const maxPosts = 6;
+            posts.slice(0, maxPosts).forEach(function (post, index) {
+                let postElement = `
+                <article class="card mb-3 blog-post-card">
+                    <header class="card-header d-flex justify-content-between align-items-center post-header" id="heading-${index}" data-toggle="collapse" data-target="#collapse-${index}" aria-expanded="false" aria-controls="collapse-${index}">
+                        <section class="d-flex align-items-center post-title-section">
+                            <i class="fas fa-chevron-right mr-2 arrow-icon"></i>
+                            <h2 class="mb-0 flex-grow-1 mainColorText post-title"><b>${post.title.rendered}</b></h2>
+                            <time datetime="${post.date}" class="secondaryColorText post-date"><strong>${new Date(post.date).toLocaleDateString()}</strong></time>
+                        </section>
+                        <aside class="post-author ml-4 d-flex align-items-center">
+                            <img src="${post._embedded.author[0].avatar_urls[48]}" alt="Author: ${post._embedded.author[0].name}" class="rounded-circle author-avatar mr-2">
+                            <span class="author-name">${post._embedded.author[0].name}</span>
+                        </aside>
+                    </header>
+                    <section class="collapse post-content" id="collapse-${index}" aria-labelledby="heading-${index}" data-parent="#blog-posts">
+                        <article class="card-body">${post.excerpt.rendered}
+                            <a href="${post.link}" class="btn btn-primary mt-3 read-more-btn">Read More</a>
                         </article>
-                    `;
-                $('#blog-posts').append(postElement);
-            });
-
-            // Arrow rotation
-            $('.card-header').on('click', function () {
-                $(this).find('.arrow-icon').toggleClass('rotate-dropdown');
-            });
+                    </section>
+                </article>
+            `;
+            $('#blog-posts').append(postElement);
+        });
         },
-        error: function (error) {
-            console.log("Error fetching posts: ", error);
+        error: function (xhr, status, error) {
+            console.log("Error fetching posts: ", status, error);
             $('#blog-posts').append('<p class="alert alert-danger">Failed to load posts.</p>');
         }
     });
