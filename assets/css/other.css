@@ -1,14 +1,12 @@
 .distribution, .po-box, .volunteer-link {
     text-align: center;
 }
-
 /* Distribution Cards */
 .distribution-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 .distribution-box {
     border: 1px solid var(--secondaryColor);
     border-radius: 15px;
@@ -24,51 +22,40 @@
     text-align: center;
     max-width: 100%;
 }
-
 .distribution-box li {
     text-align: left;
 }
-
 .distribution-box:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     transform: translateY(-5px);
 }
-
 .distribution-box img {
     width: 70%;
     height: auto;
     border-radius: 15px;
     max-width: 100%;
 }
-
 .distribution-box h3 {
     margin-top: 10px;
     font-size: 1.5rem;
 }
-
 .distribution-box h3, .distribution-box p, .distribution-box a, .distribution-box ul {
-    font-size: 1rem;
     padding: 0 10px;
     overflow-wrap: break-word;
 }
-
 .po-box {
     border-style: dashed;
     padding: 1.5%;
 }
-
 /* CSFP PAGE (2) */
-
 .csfp-main {
     margin-bottom: -40px;
 }
-
 .csfp-container {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
 }
-
 /* Banner image */
 .csfp-banner {
     margin-bottom: 5px;
@@ -78,23 +65,20 @@
     object-fit: cover;
     border-radius: 15px;
 }
-
 /* Details section */
 .csfp-details {
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: flex-start;
     padding: 20px;
     border-radius: 10px;
     margin-top: 10px;
 }
-
 .csfp-text {
     text-align: left;
     width: 100%;
     margin-bottom: 20px;
 }
-
 /* Text section */
 .csfp-text {
     flex-basis: 50%;
@@ -102,7 +86,6 @@
     border-right: 2px solid #dee2e6;
     border-bottom: none;
 }
-
 /* Image */
 .csfp-image {
     width: 40%;
@@ -112,44 +95,36 @@
     margin-bottom: 5px;
     border-radius: 15px;
 }
-
 /* List */
 .csfp-list {
     flex-basis: 50%;
     padding-left: 5px;
 }
-
 .csfp-list h3 {
     margin-bottom: 10px;
     color: var(--mainColor);
 }
-
 .csfp-list li {
     margin-bottom: 5px;
     line-height: 1.5;
 }
-
 .csfp-signup {
-    text-align: center; 
+    text-align: center;
     height: 100%;
 }
-
 .csfp-signup p {
     margin-bottom: .5rem;
 }
-
 .csfp-signup ul {
     display: flex;
     justify-content: center;
 }
-
 .csfp-signup li {
     color: var(--secondaryColor);
     font-weight: bold;
     display: inline-block;
     padding-right: 15px;
 }
-
 /* Sign up image */
 .csfp-signup img {
     width: 85%;
@@ -168,7 +143,6 @@
     background-color: #f8f9fa;
     box-shadow: 5px 5px #dbdbdb;
 }
-
 .org-row header {
     transition: background-color 0.3s ease;
     width: 100%;
@@ -176,7 +150,6 @@
     flex-direction: column;
     align-items: flex-start;
 }
-
 .org-row-title {
     font-weight: bold;
     color: var(--mainColor);
@@ -184,31 +157,25 @@
     align-items: center;
     gap: 15px;
 }
-
 .arrow-icon {
     transition: transform 0.3s ease;
 }
-
 .org-row-desc {
     font-weight: bold;
     color: var(--secondaryColor);
 }
-
 .org-row-image {
     max-width: 55%;
     height: auto;
     border-radius: 5px;
 }
-
 .org-row-extra {
     padding: 15px;
     border-top: 3px solid var(--tertiaryColor);
 }
-
 .org-row:hover {
     background-color: #e9ecef;
 }
-
 /* Newsletter styling */
 .news-sidebar {
     padding: 20px;
@@ -216,13 +183,11 @@
     border-radius: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
 /* Newsletter form */
 .news-input {
     border-radius: 5px;
     border: 1px solid #ccc;
 }
-
 /* Link buttons on the sidebar */
 .link-button {
     background-color: #f8f9fa;
@@ -231,218 +196,173 @@
     border: solid var(--secondaryColor) 1px;
     transition: background-color 0.3s ease;
 }
-
 .link-button:hover {
     background-color: #e9ecef;
     text-decoration: none;
     color: #004d2c;
 }
-
 .link-button-item {
     overflow: hidden;
     margin-bottom: 10px;
 }
-
 /* Cards, Volunteering, and About Us Sections */
 .about-image {
     border-radius: 15px;
     max-width: 60%;
 }
-
 .card, .volunteer-image {
     border-radius: 15px;
     max-width: 100%;
 }
-
 .card-body {
     padding: 15px;
     background-color: var(--textWhite);
     border-radius: 15px;
 }
-
 .card-title, .volunteer-heading {
     color: var(--mainColor);
     font-weight: bold;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: flex-start;
     font-size: 2rem;
 }
-
 .card-text {
     color: var(--secondaryColor);
 }
-
 .arrow-icon {
     transition: transform 0.3s ease;
 }
-
 .rotate-dropdown {
     transform: rotate(90deg);
 }
-
 .card-header {
     cursor: pointer;
     border-radius: 15px;
 }
-
 .card-header h2, .card-header time {
     padding: 10px;
     margin-bottom: 0;
 }
-
 .card-header h2 {
     text-decoration: underline;
 }
-
 /* Styling for author and image */
 .post-author img {
     width: 45px;
     height: 45px;
-    border-radius: 50%; /* circular */
+    border-radius: 50%;
+   /* circular */
 }
-
 .card {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
 .collapse {
     border-radius: 0 0 15px 15px;
 }
-
 .card-header:hover {
     background-color: #f8f9fa;
 }
-
 .donation-card {
     padding: 20px;
     margin-top: -15px;
     margin-bottom: -35px;
 }
-
 .donation-card h3 {
     text-align: left;
 }
-
 .donation-card img {
     display: block;
     border-radius: 15px;
     max-height: 170px;
 }
-
 .wrap-list {
     column-count: 2;
     column-gap: 20px;
     padding: 0;
     list-style-type: square;
 }
-
 .wrap-list li {
     break-inside: avoid;
     margin-bottom: 10px;
 }
-
 .blog-post-card {
     margin-bottom: 20px;
 }
-
 .post-header {
     align-items: center;
 }
-
 .post-title-section {
     flex-grow: 1;
 }
-
 .author-avatar {
     width: 50px;
     height: 50px;
 }
-
 .arrow-icon {
     min-width: 30px;
 }
-
 @media (max-width: 992px) {
     .about-us img, .card-title, .volunteer-heading {
         font-size: 1.75rem;
-        max-width: 50%; 
-    }
-
+   }
     .card, .card-body {
         padding: 10px;
-    }
-
+   }
     .distribution-box {
         flex-basis: 100%;
-    }
-
+   }
     .distribution-box img {
         width: 100%;
-    }
-
-    .card-title, .volunteer-heading {
-        font-size: 1.5rem;
-    }    
-
+   }
     .card-text, .volunteer-text, .volunteer-link {
-        font-size: 0.9rem;
-    }
-
+        font-size: 1rem;
+   }
     .csfp-text {
         border-bottom: 2px solid #dee2e6;
         border-right: none;
-    }
-
+   }
     .csfp-image {
         margin-left: 0px;
         margin-top: 10px;
         margin-right: 10px;
-    }
-
+   }
     .csfp-image:last-child {
         margin-right: 0;
-    }
+   }
 }
-
 @media (max-width: 768px) {
     .distribution-box {
         flex-basis: 100%;
-    }
+   }
     .post-header {
         flex-wrap: wrap;
-    }
-
+   }
     .post-title-section {
         flex-basis: 100%;
         margin-bottom: 10px;
-    }
-
+   }
     .post-title {
         font-size: 1.25rem;
-    }
-
+   }
     .post-date {
         font-size: 0.85rem;
-    }
-
+   }
     .author-name {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 150px;
-    }
+   }
 }
-
-
 @media (max-width: 576px) {
     .about-us img {
         max-width: 100%;
-    }
+   }
     .distribution-box {
         padding: 10px;
         flex-basis: 100%;
-    }
+   }
 }
