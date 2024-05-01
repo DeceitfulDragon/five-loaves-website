@@ -359,7 +359,6 @@ footer li a:hover {
     padding-bottom: 10px;
 }
 
-/* ORGANIZATIONS PAGE (3) */
 /* Organizations */
 .org-row {
     cursor: pointer;
@@ -408,7 +407,6 @@ footer li a:hover {
     display: flex;
     align-items: center;
 }
-
 .news-sidebar {
     padding: 20px;
     background-color: #f4f4f4;
