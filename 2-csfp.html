@@ -60,58 +60,88 @@
     </header>
 
     <main class="container-fluid csfp-main">
+        <!-- Header Image -->
         <section class="row">
-            <!-- Banner and info -->
-                <article class="col-md-7 csfp-container">
-                    <img src="./assets/images/csfp_top.webp" alt="CSFP Image" class="csfp-banner">
-                    <section class="card csfp-details">
-                        <section class="csfp-text">
-                            <p>The Commodity Supplemental Food Program (CSFP) works to improve the health of low-income persons at least 60 years of age by supplementing their diets with nutritious USDA Foods. USDA distributes both food and administrative funds to participating states and tribal organizations to operate CSFP. State agencies distribute CSFP food to public and nonprofit private local agencies. Local agencies determine the eligibility of applicants, distribute the foods, and provide nutrition education.</p>
-                            <br>
-                            <p>CSFP offers a monthly food package with a variety of nutritious foods, such as unsweetened or lightly sweetened canned fruits, low sodium or no salt added canned vegetables, low fat dairy products, whole grain cereals and pasta, and a variety of protein foods including lean meats, poultry, fish, and beans.</p>
-                            <br>
-                            <a href="https://www.fns.usda.gov/csfp/commodity-supplemental-food-program"><i class="fa-solid fa-arrow-up-right-from-square"></i> <u>usda.gov/csfp</u></a>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
+            <article class="col-12">
+                <img src="./assets/images/csfp_top.webp" alt="CSFP Image" class="csfp-banner img-fluid">
+            </article>
+        </section>
+    
+        <!-- Information Cards in a Single Row -->
+        <section class="row">
+            <!-- Program Details Card -->
+            <article class="col-12 col-md-4">
+                <section class="card csfp-details">
+                    <header>
+                        <h5><b>About CSFP</b></h5>
+                    </header>
+                    <section class="csfp-text">
+                        <p>The Commodity Supplemental Food Program (CSFP) works to improve the health of low-income persons at least 60 years of age by supplementing their diets with nutritious USDA Foods. USDA distributes both food and administrative funds to participating states and tribal organizations to operate CSFP. Local agencies determine the eligibility of applicants, distribute the foods, and provide nutrition education.</p>
+                        <p>CSFP offers a monthly food package with a variety of nutritious foods, such as unsweetened or lightly sweetened canned fruits, low sodium or no salt added canned vegetables, low fat dairy products, whole grain cereals and pasta, and a variety of protein foods including lean meats, poultry, fish, and beans.</p>
+                        <p>USDA programs are prohibited from discriminating based on race, color, national origin, sex, disability, age, or reprisal or retaliation for prior civil rights activity in any program or activity conducted or funded by USDA.</p>
+                        <section class="csfp-buttons">
+                            <a href="https://www.fns.usda.gov/csfp/commodity-supplemental-food-program" class="btn btn-primary">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> <u>USDA Website</u>
+                            </a>
+                            <a href="https://www.fns.usda.gov/csfp/fact-sheet" class="btn btn-primary">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> <u>CSFP Fact Sheet</u>
+                            </a>
+                            <a href="https://www.fns.usda.gov/sites/default/files/resource-files/csfp-program-fact-sheet-2019.pdf" class="btn btn-primary">
+                                <i class="fas fa-file-pdf"></i> <u>CSFP PDF</u>
+                            </a>
                         </section>
-                        <section class="csfp-list">
-                            <img src="./assets/images/csfp_middle.webp" alt="Box of food" class="csfp-image">
-                            <img src="./assets/images/fs_4.webp" alt="Another box of food" class="csfp-image">
-                            <h3><b>Monthly Box Includes*:</b></h3>
-                            <ul>
-                                <li>8 cans of vegetables</li>
-                                <li>2 shelf stable milk</li>
-                                <li>2 boxes of cereal</li>
-                                <li>3 cans of fruit</li>
-                                <li>1 juice</li>
-                                <li>3 cans of protein</li>
-                                <li>Pasta</li>
-                                <li>Peanut butter or nuts</li>
-                                <li>1 two-pound block of cheese</li>
-                                <p>*contents subject to change</p>
-                            </ul>
-                        </section>
+                        
                     </section>
-                </article>   
-            <!-- Sign up info -->
-            <article class="col-md-5 csfp-signup card">
-                <header>
-                    <h5 class="mainColorText"><b>How to sign up for CSFP</b></h5>
-                </header>
-                <a class="secondaryColorText" id="csfpFormLink" href=""><i class="fa-solid fa-arrow-up-right-from-square"></i> <u>Complete this online form</u></a>
-                <p id="FoodShelfPhone">Or call our food shelf: </p>
-                <p>Boxes can be picked up at Five Loaves Food Shelf or delivered to the following locations:</p>
-                <ul>
-                    <li><i class="fa-solid fa-location-dot"></i> Beebe Lofts</li>
-                    <li><i class="fa-solid fa-location-dot"></i> Boardman Meadows</li>
-                    <li><i class="fa-solid fa-location-dot"></i> Sunshine Courts</li>
-                </ul>
-                <img src="./assets/images/csfp_bottom.webp" alt="CSFP Image">
+                </section>
+            </article>
+    
+            <!-- Food Package Contents Card -->
+            <article class="col-12 col-md-4">
+                <section class="card csfp-list">
+                    <header>
+                        <h5><b>Monthly Box</b></h5>
+                    </header>
+                    <section class="csfp-list-image">
+                        <img src="./assets/images/csfp_middle.webp" alt="Box of food" class="csfp-image img-fluid">
+                        <img src="./assets/images/fs_4.webp" alt="Box of food" class="csfp-image img-fluid">
+                    </section>
+                    <ul>
+                        <li>8 cans of vegetables</li>
+                        <li>2 shelf stable milk</li>
+                        <li>2 boxes of cereal</li>
+                        <li>3 cans of fruit</li>
+                        <li>1 juice</li>
+                        <li>3 cans of protein</li>
+                        <li>Pasta</li>
+                        <li>Peanut butter or nuts</li>
+                        <li>1 two-pound block of cheese</li>
+                        <p>*contents subject to change</p>
+                    </ul>
+                </section>
+            </article>
+    
+            <!-- Sign Up Information Card -->
+            <article class="col-12 col-md-4">
+                <section class="card csfp-signup">
+                    <header>
+                        <h5><b>How to Sign Up</b></h5>
+                    </header>
+                    <a class="secondaryColorText" id="csfpFormLink" href=""><i class="fa-solid fa-arrow-up-right-from-square"></i> <u>Complete this online form</u></a>
+                    <p id="FoodShelfPhone">Or call our food shelf: </p>
+                    <p>Boxes can be picked up at Five Loaves Food Shelf or delivered to the following locations:</p>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> Beebe Lofts</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Boardman Meadows</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Sunshine Courts</li>
+                    </ul>
+                    <img src="./assets/images/csfp_bottom.webp" alt="CSFP Image" class="img-fluid">
+                </section>
             </article>
         </section>
     </main>
+    
+    
+    
     
     <footer>
         <section>

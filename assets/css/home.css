@@ -268,66 +268,54 @@ footer li a:hover {
     border-style: dashed;
     padding: 1.5%;
 }
-/* General Styles for the CSFP Main Container */
+/* CSFP */
 .csfp-main {
-    padding-top: 20px; /* Adds space at the top of the main container */
-    background-color: #f4f4f4; /* Light grey background for the whole page */
+    padding-top: 20px;
+    background-color: #f4f4f4;
 }
-
 .csfp-main header {
     color: var(--mainColor);
     background-color: #e9ecef;
     margin-bottom: 10px;
 }
-
-/* Container and Flexbox Setup */
 .csfp-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-
-/* Banner Image Styling */
 .csfp-banner {
     margin: 0;
     width: 100%;
-    max-height: 60px; /* Adjusted from 25% to a fixed max height */
+    max-height: 60px;
     border-radius: 15px;
     display: block;
     object-fit: cover;
 }
-
-/* Details Section Styling */
 .csfp-details p {
-    padding: 20px;
+    padding: 10px;
 }
-
-/* Text Section Styling */
 .csfp-text {
     text-align: left;
     width: 100%;
     margin-bottom: 20px;
 }
-
 .csfp-buttons {
     display: flex;
     justify-content: center;
+    padding-top: 30px;
 }
-
 .csfp-buttons a {
     display: inline-block;
     padding: 10px 20px;
     margin: 0 5px;
-    color: #fff; /* Button text color */
+    color: #fff;
     text-decoration: none;
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
-
 .csfp-buttons a:hover {
-    background-color: #3f3b37; /* Darker background color on hover */
+    background-color: #3f3b37;
 }
-
 .csfp-image {
     width: 45%;
     height: auto;
@@ -335,12 +323,15 @@ footer li a:hover {
     margin-bottom: 10px;
     border-radius: 15px;
 }
-
 .csfp-list li {
     margin-bottom: 5px;
     line-height: 1.6;
 }
-
+.csfp-list-image {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 /* Signup Section */
 .csfp-signup {
     text-align: center;
@@ -359,13 +350,13 @@ footer li a:hover {
     display: inline-block;
     padding-right: 15px;
 }
-
 /* Signup Image */
 .csfp-signup img {
     width: 85%;
     height: auto;
     display: block;
     margin: auto;
+    padding-bottom: 10px;
 }
 
 /* ORGANIZATIONS PAGE (3) */
@@ -447,6 +438,9 @@ footer li a:hover {
     margin-bottom: 10px;
 }
 /* Cards, Volunteering, and About Us Sections */
+.about-us-main > .my-3 {
+    margin-top: 0px !important;
+}
 .about-image {
     border-radius: 15px;
     max-width: 60%;
@@ -544,7 +538,6 @@ footer li a:hover {
 .arrow-icon {
     min-width: 30px;
 }
-
 
 /* Responsive changes */
 @media (max-width: 992px) {
