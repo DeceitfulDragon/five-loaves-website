@@ -177,6 +177,11 @@
     background-color: #e9ecef;
 }
 /* Newsletter styling */
+.n-side {
+    display: flex;
+    align-items: center;
+}
+
 .news-sidebar {
     padding: 20px;
     background-color: #f4f4f4;
