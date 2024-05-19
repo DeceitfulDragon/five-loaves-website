@@ -540,6 +540,49 @@ footer li a:hover {
     min-width: 30px;
 }
 
+/* 404 Page Styles */
+.not-found-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--tertiaryColor);
+    color: var(--mainColor);
+}
+
+.not-found-container h1 {
+    font-size: 10rem;
+    margin-bottom: 20px;
+    color: var(--secondaryColor);
+}
+
+.not-found-container h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.not-found-container p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.not-found-container .btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: var(--textWhite);
+    background-color: var(--secondaryColor);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.not-found-container .btn:hover {
+    background-color: #63463b;
+}
+
 /* Responsive changes */
 @media (max-width: 992px) {
     .main-youtube, .wide-image, .sidebar {
