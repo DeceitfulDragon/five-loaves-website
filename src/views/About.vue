@@ -126,19 +126,19 @@
             </h3>
             <p>
               <i class="fa-solid fa-location-dot"></i>
-              <span id="foodShelfLocation">144 West 3rd Street, Suite D</span>
+              <span id="foodShelfLocation"> 144 West 3rd Street, Suite D</span>
             </p>
             <p>
               <i class="fa-solid fa-envelope"></i>
               <a
                 href="mailto:jennifer5loaves@gmail.com"
                 class="text-blue-800 font-semibold"
-                >jennifer5loaves@gmail.com</a
+                > jennifer5loaves@gmail.com</a
               >
             </p>
             <p>
               <i class="fa-solid fa-phone"></i>
-              <span id="FoodShelfPhone">(715)-246-5255</span>
+              <span id="FoodShelfPhone"> (715)-246-5255</span>
             </p>
             <ul
               class="list-disc mt-4 list-none text-secondaryColor font-semibold"
@@ -170,30 +170,29 @@
             </h3>
             <p>
               <i class="fa-solid fa-location-dot"></i>
-              <span id="thriftStoreLocation">144 West Third Street </span>
+              <span id="thriftStoreLocation"> 144 West Third Street </span>
             </p>
             <p>
               <i class="fa-solid fa-envelope"></i>
               <a
                 href="mailto:jennifer5loaves@gmail.com"
                 class="text-blue-800 font-semibold"
-                >2fishcontacts@gmail.com</a
+                > 2fishcontacts@gmail.com</a
               >
             </p>
             <p>
               <i class="fa-solid fa-phone"></i>
-              <span id="ThriftStorePhone">(715)-246-0066</span>
+              <span id="ThriftStorePhone"> (715)-246-0066</span>
             </p>
             <ul
               class="list-disc mt-4 list-none text-secondaryColor font-semibold"
             >
               <li><i class="far fa-clock"></i> Monday: 10:00 am - 4:30 pm</li>
               <li><i class="far fa-clock"></i> Tuesday: 10:00 am - 1:00 pm</li>
-              <li>
-                <i class="far fa-clock"></i> Wednesday: 10:00 am - 6:00 pm
-              </li>
+              <li><i class="far fa-clock"></i> Wednesday: 10:00 am - 6:00 pm</li>
               <li><i class="far fa-clock"></i> Thursday: 10:00 am - 4:30 pm</li>
               <li><i class="far fa-clock"></i> Friday: 10:00 am - 4:30 pm</li>
+              <li><i class="far fa-clock"></i> Saturday: 10:00 am - 1:00 pm</li>
             </ul>
           </div>
         </article>
