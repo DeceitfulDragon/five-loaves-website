@@ -14,27 +14,22 @@
       <article class="bg-white border-secondaryColor shadow-lg rounded-3xl p-6 text-center hover:shadow-xl transition w-full">
         <img src="@/assets/images/fs_1.webp" alt="Some outdoor wall art" class="w-full h-80 object-cover rounded-3xl mb-4">
         <h3 class="text-2xl font-bold text-mainColor">
-          <i class="fas fa-basket-shopping"></i> <u>First Visit</u>
+          <i class="fas fa-basket-shopping"></i> <u>Getting Food</u>
         </h3>
         <p class="mt-2">The first time you receive food from Five Loaves, you will need:</p>
-        <ul class="mt-4 ml-6 text-left list-disc space-y-2">
+        <ul class="mt-2 ml-6 text-left list-disc space-y-2">
           <li><i class="far fa-address-card"></i> Some form of ID with a birthdate</li>
           <li><i class="far fa-address-book"></i> The names and age groups of those residing in your household</li>
+          <li><i class="fas fa-circle-exclamation"></i> You must be a resident of or live within the boundaries of the New Richmond School District.</li>
         </ul>
-        <p class="mt-4">
-          <i class="fas fa-circle-exclamation"></i> You must be a resident of or live within the boundaries of the <span class="cityAndState"></span> School District.
+        <p class="mt-3">
+          Clients may visit Five Loaves <strong>TWICE</strong> a month to receive food. You may come in to shop for food or receive food curbside.
         </p>
       </article>
 
       <!-- 2 -->
       <article class="bg-white border-secondaryColor shadow-lg rounded-3xl p-6 text-center hover:shadow-xl transition w-full">
         <img src="@/assets/images/fs_11.webp" alt="A cart with food in someone's hand" class="w-full h-80 object-cover rounded-3xl mb-4">
-        <h3 class="text-2xl font-bold text-mainColor">
-          <i class="fas fa-utensils"></i> <u>Getting Food</u>
-        </h3>
-        <p class="mt-2 text-gray-700">
-          Clients may visit Five Loaves <strong>TWICE</strong> a month to receive food. You may come in to shop for food or receive food curbside.
-        </p>
         <h3 class="mt-4 text-2xl font-bold text-mainColor">
           <i class="fas fa-car-side"></i> <u>Order Ahead</u>
         </h3>
@@ -45,9 +40,12 @@
           </a>
           <br>Make sure it is sent at least 3 hours before distribution!
         </p>
-        <a href="/files/Order_Ahead_Form_5-11-26.pdf" class="mt-4 text-secondaryColor underline">
+        <a href="/files/Order_Ahead_Form_5-11-26.pdf" class="mt-4 w-full block text-center bg-secondaryColor text-white py-2 px-4 rounded-lg hover:bg-secondaryHover transition transform hover:-translate-y-1 shadow-lg">
           <i class="fas fa-file-pdf"></i> <u>Download Order Ahead Form (.PDF)</u>
         </a>
+        <p class="mt-3 text-red-600">
+          <i class="fa-solid fa-triangle-exclamation"></i><strong> Curbside Pickup / Order Ahead is no longer available on Monday nights until further notice.</strong>
+        </p>
       </article>
 
       <!-- 3 -->
@@ -64,6 +62,7 @@
           <li><i class="far fa-clock"></i> <span class="font-semibold">Tuesday</span> - 10:00am to 12:00pm</li>
           <li><i class="far fa-clock"></i> <span class="font-semibold">Wednesday</span> - 2:00pm to 4:00pm</li>
           <li><i class="far fa-clock"></i> <span class="font-semibold">Thursday</span> - 5:30pm to 7:00pm</li>
+          <li><i class="far fa-clock"></i> <span class="font-semibold">Friday</span> - CLOSED</li>
         </ul>
       </article>
     </section>
