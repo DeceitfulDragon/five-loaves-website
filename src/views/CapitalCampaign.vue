@@ -24,7 +24,7 @@
     </section>
 
     <!-- Text Section -->
-    <section class="bg-white h-64 flex flex-col lg:flex-row items-center justify-between p-6 rounded-xl">
+    <section class="bg-white min-h-64 flex flex-col lg:flex-row items-center justify-between p-6 rounded-xl">
       <!-- Text on the left -->
       <article class="lg:w-2/3">
         <h2 class="text-3xl font-bold text-left text-mainColor underline">
