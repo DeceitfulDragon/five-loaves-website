@@ -36,16 +36,17 @@
           Clients may visit Five Loaves <strong>TWICE</strong> a month to receive food. You may come in to shop for food or receive food curbside.
         </p>
         <h3 class="mt-4 text-2xl font-bold text-mainColor">
-          <i class="fas fa-car-side"></i> <u>Curbside List</u>
+          <i class="fas fa-car-side"></i> <u>Order Ahead</u>
         </h3>
         <p class="mt-2 text-gray-700">
-          Curbside lists are available inside the client entrance. You can also print the list below and bring it with you, or email it to: 
+          We no longer use Curbside Lists! The Order Ahead Form is available in the link below. Please email your completed Order Ahead Form to: 
           <a id="foodShelfEmailLink" href="mailto:jennifer5loaves@gmail.com" class="text-secondaryColor underline"><br>
             <i class="fas fa-paper-plane"></i> <u>jennifer5loaves@gmail.com</u>
           </a>
+          <br>Make sure it is sent at least 3 hours before distribution!
         </p>
-        <a href="/files/Curbside_Pick_Up.pdf" class="mt-4 text-secondaryColor underline">
-          <i class="fas fa-file-pdf"></i> <u>Download Curbside Pick Up Form (PDF)</u>
+        <a href="/files/Order_Ahead_Form_5-11-26.pdf" class="mt-4 text-secondaryColor underline">
+          <i class="fas fa-file-pdf"></i> <u>Download Order Ahead Form (.PDF)</u>
         </a>
       </article>
 
