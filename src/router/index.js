@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import About from '../views/About.vue';
 import Home from '../views/Home.vue';
+import Resources from '../views/Resources.vue';
 import Distribution from '../views/Distribution.vue';
 import Donations from '../views/Donations.vue';
 import Organizations from '../views/Organizations.vue';
@@ -23,6 +24,14 @@ const routes = [
     component: About,
     meta: {
       title: 'About | Five Loaves',
+    }
+  },
+    {
+    path: '/resources',
+    name: 'Resources',
+    component: Resources,
+    meta: {
+      title: 'Resources | Five Loaves',
     }
   },
   {
